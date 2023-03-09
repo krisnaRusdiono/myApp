@@ -1,0 +1,10 @@
+version: "2.15.1"
+
+services:
+  myapp:
+    image: myapp
+    build:
+      dockerfile: Dockerfile
+    container_name: myapp_container
+    ports:
+      - "4200:80"
