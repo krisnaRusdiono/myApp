@@ -1,0 +1,9 @@
+What's new from branch chore/dependency
+- Mengenal angular schematics (https://angular.io/guide/schematics) 
+    Angular Schematics itu sendiri merupakan template-based code generator yang support untuk complex logic (mirip fungsinya dengan "npm install", "npx init" atau "yarn install")
+
+    example: 
+    Penambahan module angular material menggunakan schematics (existing support) 
+    "ng add @angular/material"
+
+    Bisa custom sesuai kebutuhan namun tidak terlalu manfaat karena existing schematics sudah cukup sebetulnya
