@@ -31,4 +31,29 @@ What's new from branch feat/getting-started
     > app
         merupakan tempat dimana seluruh module dan komponen kita simpan dan gunakan
 
-    
+- Brief penambahan basic struktur di aplikasi menggunakan cli command generate (https://angular.io/cli/generate), berikut adalah most common use case nya saja, lengkapnya bisa lihat di docs 
+    > Menggenerate component toolbar
+        ng generate component toolbar 
+    > Menggenerate module bernama "Home"
+        ng generate module modules/home
+    > Menggenerate lazy load module bernama "Office"
+        ng generate module modules/office --route office --module app.module
+    > Menggenerate initial environment
+        ng generate environments
+    > Menggenerate custom pipe
+        ng generate pipe myPipe
+    > Menggenerate custom directive
+        ng generate directive myDirective
+    > Menggenerate custom auth guard
+        ng generate guard auth
+    > Menggenerate custom interceptor
+        ng generate interceptor authInterceptor
+    > Menggenerate custom service
+        ng generate service myService
+    > Menggenerate custom resolver
+        ng generate resolver myResolver
+
+    * folder components ditambahkan manual, untuk tata letak generate bisa disesuaikan mengikuti dimana cmd/ powershell dibuka, dan penamaan module, components disesuaikan untuk memudahkan pemahaman
+
+
+
