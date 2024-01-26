@@ -7,3 +7,28 @@ What's new from branch chore/dependency
     "ng add @angular/material"
 
     Bisa custom sesuai kebutuhan namun tidak terlalu manfaat karena existing schematics sudah cukup sebetulnya
+
+What's new from branch feat/getting-started
+- Brief terkait struktur projek (yang utama)
+    > root  
+        angular.json
+            file ini adalah konfigurasi dari bagaimana environment angular berjalan, konfigurasi ini meliputi banyak hal diantaranya 
+            - penentuan rootpath di "root"
+            - prefix untuk penulisan nama komponen
+            - settingan build 
+            - settingan development
+            - settingan i18n (internationalization, jarang dipakai)
+            - settingan untuk testing
+
+            masing-masing secara default memiliki  2 konfigurasi, yaitu development dan production
+    > src
+        main.ts
+            file ini adalah script yang berfungsi sebagai bootstrap untuk mentrigger angular module agar bisa berjalan, bisa dimodifikasi
+        styles.scss
+            set css style yang memiliki scope global
+        index.html
+            file html yang berfungsi sebagai container untuk merender aplikasi (mungkin di .net mah _sharedLayout.cshtmlnya)
+    > app
+        merupakan tempat dimana seluruh module dan komponen kita simpan dan gunakan
+
+    
