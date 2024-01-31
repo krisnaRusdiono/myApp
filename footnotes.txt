@@ -55,5 +55,7 @@ What's new from branch feat/getting-started
 
     * folder components ditambahkan manual, untuk tata letak generate bisa disesuaikan mengikuti dimana cmd/ powershell dibuka, dan penamaan module, components disesuaikan untuk memudahkan pemahaman
 
+What's new in branch feat/routing
+-   pada commit ini, kita membuat komponen di home modul bernama "home" yangmana komponen ini di deklarasikan under home module, sehingga kepemilikan komponen ini adalah milik home module. kemudian kita menambahkan route baru bernama "home" untuk menampilkan komponen "home" saat mengklik navigasi home
 
 
