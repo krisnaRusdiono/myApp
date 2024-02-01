@@ -58,5 +58,6 @@ What's new from branch feat/getting-started
 What's new in branch feat/routing
 -   pada commit ini, kita membuat komponen di home modul bernama "home" yangmana komponen ini di deklarasikan under home module, sehingga kepemilikan komponen ini adalah milik home module. kemudian kita menambahkan route baru bernama "home" untuk menampilkan komponen "home" saat mengklik navigasi home
 -   pada commit ini, ada penambahan "standalone components" (standalone artinya tidak perlu di deklarasikan under any module) bernama notFound yang dibuat untuk menghandle routes yang belum terdaftar di app-routing module
+-   pada commit ini kita melakukan setup route untuk menampilkan children route di modul office
 
 
