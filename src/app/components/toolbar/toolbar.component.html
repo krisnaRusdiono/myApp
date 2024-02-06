@@ -17,6 +17,21 @@
           Office
         </span>
       </a>
+
+      <a
+        class="mr-4 text-neutral-600 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+        href="/restricted">
+        <span class="[&>svg]:w-5">
+          Restricted
+        </span>
+      </a>
+
+      <div class="mr-4 text-neutral-600 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400">|</div>
+
+      <div>
+        <label class="mr-4 text-neutral-600 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" for="login-toggle">Toggle Login</label>
+        <input type="checkbox" id="login-toggle" [(ngModel)]="loginStatus" (change)="handleCheckChange($event)" aria-label="login-toggle">
+      </div>
     </div>
   </div>
 </nav>

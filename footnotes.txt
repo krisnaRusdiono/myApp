@@ -59,5 +59,6 @@ What's new in branch feat/routing
 -   pada commit ini, kita membuat komponen di home modul bernama "home" yangmana komponen ini di deklarasikan under home module, sehingga kepemilikan komponen ini adalah milik home module. kemudian kita menambahkan route baru bernama "home" untuk menampilkan komponen "home" saat mengklik navigasi home
 -   pada commit ini, ada penambahan "standalone components" (standalone artinya tidak perlu di deklarasikan under any module) bernama notFound yang dibuat untuk menghandle routes yang belum terdaftar di app-routing module
 -   pada commit ini kita melakukan setup route untuk menampilkan children route di modul office
+-   pada commit ini kita menambahkan setup akses untuk melindungi route "restricted" menggunakan simple logic yaitu pengecekan key dari local storage menggunakan 2 guards yaitu canActivate dan canActivateChild disertai toggle aksesnya. Selain itu kita menambahkan logic redirect pada root routing module
 
 
