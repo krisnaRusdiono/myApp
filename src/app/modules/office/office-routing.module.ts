@@ -4,6 +4,7 @@ import { OfficeComponent } from './office.component';
 import { ManagerialComponent } from './components/managerial/managerial.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { authChildGuard } from 'src/app/guards/auth-child.guard';
+import { ManagerialDetailComponent } from './components/managerial-detail/managerial-detail.component';
 
 const routes: Routes = [
   { 
@@ -12,7 +13,8 @@ const routes: Routes = [
     canActivateChild: [authChildGuard],
     children: [
       { path: 'managerial', component: ManagerialComponent },
-      { path: 'employee', component: EmployeeComponent }
+      { path: 'employee', component: EmployeeComponent },
+      { path: 'managerial/:id', component: ManagerialDetailComponent }
     ] 
   },
 ];

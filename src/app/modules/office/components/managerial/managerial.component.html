@@ -1,1 +1,7 @@
 <p>managerial works!</p>
+
+<div class="flex justify-center gap-5 my-4">
+    <button type="button" class="custom-button" routerLink="{{item.id}}" routerLinkActive="bg-green-600" *ngFor="let item of managerialList">
+        Detail {{ item.name }}
+    </button>
+</div>

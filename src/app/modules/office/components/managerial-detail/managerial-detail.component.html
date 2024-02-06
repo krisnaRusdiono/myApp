@@ -1,0 +1,24 @@
+<p>managerial-detail works!</p>
+
+<div *ngIf="data; else noData" class="p-6">
+    <p class="text-lg font-bold text-center my-4">Detail for :</p> 
+    <div class="flex flex-col w-[720px] mx-auto p-6">
+        <div class="grid grid-cols-3">
+            <span>Id</span>
+            <span>:</span>
+            <span>{{ data.id }}</span>
+        </div>
+        <div class="grid grid-cols-3">
+            <span>Name</span>
+            <span>:</span>
+            <span>{{ data.name }}</span>
+        </div>
+    </div>
+</div>
+
+<ng-template #noData>
+    <p class="text-lg font-bold text-center my-4">Detail for :</p> 
+    <div class="flex flex-col w-[720px] mx-auto p-6">
+        No data found
+    </div>
+</ng-template>

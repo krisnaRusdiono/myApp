@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MANAGERIAL_DATA } from 'src/app/data';
 
 @Component({
   selector: 'app-managerial',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./managerial.component.scss']
 })
 export class ManagerialComponent {
-
+  managerialList = MANAGERIAL_DATA;
 }
